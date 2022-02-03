@@ -4,7 +4,20 @@ import math
 # 01.02.22
 
 
-#Arvutisüsteemid
+#Kütusekulu arvutamine
+liitrid = int(input("Kirjuta liitrid: "))
+km = int(input("Kirjuta km: "))
+kütusekulu km = (liitrid/km*kütusekulu km)
+print("km jõuab: ",kütsekulu km,"km")
+
+
+
+
+
+
+
+
+#Arvusüsteemid
 from math import *
 arv = int(input("Kirjuta arv: "))
 ruutjuur = sqrt(arv)
