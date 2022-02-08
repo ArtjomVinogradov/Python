@@ -1,7 +1,63 @@
 
 # Harjutus 04
 # Artjom Vinogradov
-# 03.02.22
+# 08.02.22
+
+
+#jalgpalli meeskond
+
+sugu = int(input("Noh kes sa oled (M/N): "))
+
+if sugu == "M":
+    vanus = int(input("Ну сколько живешь ходишь по планете?"))
+    if vanus>=16 and vanus<=18:
+        print("so lets goo")
+    else :
+        print("No your are too old or too young")
+else:
+    print("Naised ei sobi")
+
+
+
+    
+
+
+
+
+
+
+#Müük
+hind = int(input("Siseta toode hind: "))
+if hind<=10:
+    ale = 0.1
+else:
+    ale = 0.2
+hind = hind-hind*ale
+print("hind on",hind,"eurot")
+
+
+
+
+
+
+
+
+#juubel
+arv1 = int(input("Ну сколько живешь ходишь по планете?"))
+p, k, a = arv1.plit(".")
+vanus = 2022- int(a)
+jaak = vanus%5
+if jaak==0:
+    print("Вау юбилей класс")
+else:
+    print=("Ну все иди гуляй нет юбилей сщегол")
+
+
+
+
+
+
+
 
 
 #matemaatika
