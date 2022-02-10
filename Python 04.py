@@ -4,12 +4,39 @@ from random import randint
 # 09.02.22
 
 
+#Pank
+konto = 0
+intress = 0.05
+raha = int(input("Sissetage palju raha sul on?"))
+konto = konto+raha
+aastat=int(input("Palju sa tahad hoia selle raha?"))
+
+
+
+for i in range(aastat):
+    kasum = konto*intress
+    print(f"{i+1:4} {konto:10.2f} {kasum:10.2f} {konto+kasum:10.2f}")
+    konto+=kasum
+print("f{Summa kokku:'} {konto}")
+
+    
+
+
+
+
+
+
+
+
+
+
 #Arvamismäng
-nr = for i in range(1,21):
+nr= randint(1,6)
+print()
 loop = 1
 kordade_arv = 0
 
-print('Arva ära number 1-20')
+print('Arva ära number 1-5')
  
 while loop == 1:
     arva = int(input('Sisesta täisarv: '))
@@ -23,8 +50,8 @@ while loop == 1:
         print('Sinu pakutud arv on vale u noob')
     else:
         kordade_arv += 1
-        print('Sinu pakutud arv on good man')
-  
+        print('tee uuesti')
+
 
 
 
