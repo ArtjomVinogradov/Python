@@ -10,6 +10,7 @@ class Auto1:
     nimi = 'teadmata'
     vanus = 0
     hind = 'teadmata'
+    mootor = 0
     
     
     #meetodid
@@ -50,7 +51,7 @@ class Auto2:
     #atribuudid
     nimi = 'teadmata'
     vanus = 0
-    hind = 'teadmata'
+    hind = 0
     mootor = 'teadmata'
     
     
@@ -82,8 +83,3 @@ uusObjekt.kuva()
 uusObjekt.kuvahind()
 uusObjekt.lisamootor("3.0 TDI 190kW")
 uusObjekt.kuvamootor()
-
-
-
-
-
