@@ -1,70 +1,68 @@
+import math
 # Artjom Vinogradov
 #  21.02.2022
 #    IT-21
 
 
-
 #Ruumalade leidmise programm
-import math
 
-
-def kuubiRuumala(a):
+def kuub(a):
     v=a**3
     return v
 
-def keraRuumala(a):
+def kera(a):
     v=(4*math.pi*a**3)/3
     return v
 
-def kolmnRuumala(a,h):
+def kolmn(a,h):
     v=(math.pi*a**2*h)/3
     return v
 
-def silinderRuumala(r,h):
+def silinder(r,h):
     v=math.pi*r**2*h
     return v
 
 
-number=0
+arv=0
 loop=0
 while loop == 0:
-    kujund = int(input("Vali kujund\n 1) Kuup\n 2) Kera\n 3) Koonus\n 4) Silinder\n 5) Lõpeta\n Sisesta soovitud number: "))
+    tehe = int(input("Vali tehe\n 1) Kuub\n 2) Kera\n 3) Koonus\n 4) Silinder\n 5) Lõpeta\n Sisesta tehe: "))
 
-    if kujund==1:
-        number = int(input("Valisid kuubi siis sisesta kuubi küljepikkus:  "))
-        print(f"Kuubi ruumala on: {kuubiRuumala(number)}")
+    if tehe==1:
+        arv = int(input("Sa valisid kuub, sisesta kuubi küljepikkus:  "))
+        print(f"Kuubi ruumala on: {kuub(arv)}")
     
-    elif kujund==2:
-        number = int(input("Valisid kera siis sisesta kera raadius:  "))
-        print(f"Kera ruumala on: {keraRuumala(number)}")
+    elif tehe==2:
+        arv = int(input("Sa valisid kera, sisesta kera raadius:  "))
+        print(f"Kera ruumala on: {kera(arv)}")
     
-    elif kujund==3:
-        number = int(input("Valisid koonuse siis sisesta koonuse raadius:  "))
-        number2 = int(input("Sisesta koonuse kõrgus:  "))
-        print(f"Koonuse ruumala on: {kolmnRuumala(number,number2)}")
+    elif tehe==3:
+        arv = int(input("Sa valisid koonuse, sisesta koonuse raadius:  "))
+        arv2 = int(input("Sisesta koonuse kõrgus:  "))
+        print(f"Koonuse ruumala on: {kolmn(arv,arv2)}")
     
-    elif kujund==4:
-        number = int(input("Valisid silindri siis sisesta silindri raadius:  "))
-        number2 = int(input("Sisesta silindri kõrgus:  "))
-        print(f"Silindri ruumala on: {silinderRuumala(number,number2)}")
+    elif tehe==4:
+        arv = int(input("Sa valisid silindri, sisesta silindri raadius:  "))
+        arv2 = int(input("Sisesta silindri kõrgus:  "))
+        print(f"Silindri ruumala on: {silinder(arv,arv2)}")
     else:
         loop=1  
 
 
 
 #funktsioon
-'''
-nimi = "Geralt"
-keel = "EST"
-def Tervistamine(nimi,keel):
+
+nimi = "Mees"
+keel = input("Sisestage keel EST/ENG: ")
+
+def Tervitamine(nimi,keel):
     "Tervitamine"
-    if keel == "EST"
-        tervitus = (f"Tere {nimi}")
-    elif keel == "ENG"
-        tervistus = (f"Hello {nimi}")
+    if keel == "EST":
+        tervitus = print(f"Tere {nimi}")
+    elif keel == "ENG":
+        tervitus = print(f"Hello {nimi}")
     else:
-         tervistus = (f"Привет {nimi}")
-    return tervistus
+         tervitus = print(f"Привет {nimi}")
+    return tervitus
 #funktsiooni välja
-print(Tervistamine(nimi,keel))
-'''
+print(Tervistamine)
