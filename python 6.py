@@ -1,25 +1,42 @@
+# Artjom Vinogradov
+#  19.02.2022
+#    IT-21
+
+
+#Erakonnad
+
 erakonnad = []
-kesk = 0
-ref = 0                                #Vali EKRE
-print(f"{'Eesnimi'} {'Perekonnaimi'} {'Erakond'} {'Number'}  ")
+KE = 0
+RE = 0
+IRL = 0
+SDE = 0
 
-with open('EKRE.txt', 'r') as minu_fail:
-    for rida in minu_fail:
+print(f"{'Eesnimi'}  {'Perekonnaimi'}  {'Erakond'}  {'Number'}  ")
+
+with open('EKRE.txt', 'r') as my_fail:
+    for rida in my_fail:
         for i in (rida):
-            enimi, pnimi, erakond, number = (rida.split(" "))
-        print(f"{enimi} {pnimi} {erakond} {number}")
+            eesnimi, perenimi, erakond, number = (rida.split(" "))
+        print(f"{eesnimi} {perenimi} {erakond} {number}")
         if erakond == "RE":
-            ref += 1
+            RE += 1
         elif erakond == "KE":
-            kesk += 1
+            KE += 1
+        elif erakond == "IRL":
+            IRL += 1
+        elif erakond == "SDE":
+            SDE += 1
         
-        if erakond not in erakonnad:
+    if erakond not in erakonnad:
             erakonnad.append(erakond)
-        with open('Result.txt','a') as fail_kirjutamiseks:
-            fail_kirjutamiseks.write(str(enimi)+" "+str(pnimi)+'\n')
+        
+    with open('Resultat.txt','a') as fail_missalvestab:
+        fail_missalvestab.write(str(eesnimi)+" "+str(perenimi)+'\n')
 
 
-print( )
-print(f"reformikad: {ref}")
-print(f"kesk: {kesk}")
-print(f"Erakondid: {len(erakonnad)}")
+print()
+print(f"Reformi Erakond: {RE}")
+print(f"Kesk Erakond: {KE}")
+print(f"Sotsiaaldemokraadid: {SDE}")
+print(f"Isamaa Erakond: {IRL}")
+print(f"Erakonnad kokku: {len(erakonnad)}")
