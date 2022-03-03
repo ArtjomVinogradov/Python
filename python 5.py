@@ -1,31 +1,28 @@
 # Artjom Vinogradov
-#  18.02.2022
+#  03.03.2022
 #    IT-21
 
 
 
 #Tärnid
 
-numbrid = [23,63,72,10,24,98]
+nummer = [66,45,38,41,95,102]
 
-for i in range(len(numbrid)):
-    print("*" * numbrid[i])
+for i in range(len(nummer)):
+    print("*" * nummer[i])
 print()
 
 
 
 
+#Vanus
 
-
-#Vanused
-
-numbrid = [23,63,72,10,24,98]
+numbrid = [15,31,56,72,43,100]
 
 print(f"kõige vanem: {max(numbrid)}")
-print(f"noorem: {min(numbrid)}")
-print(f"summa: {sum(numbrid)}")
-print(f"keskmine: {sum(numbrid)/len(numbrid):10.2f}")
-
+print(f"kõige noorem: {min(numbrid)}")
+print(f"summa kokku: {sum(numbrid)}")
+print(f"keskmine vanus: {sum(numbrid)/len(numbrid):10.2f}")
 print()
 
 
@@ -34,44 +31,37 @@ print()
 #Duplikaadid
 
 print()
-opilased = ['Juhan','Kati','Mario','Mario','Mati','Mati']
-p_opilased = []
+õpilased = ['Juhan','Kati','Mario','Mario','Mati','Mati']
+muuda_õpilased = []
 
-for i in range(len(opilased)):
-    if opilased[i] not in p_opilased:
-        p_opilased.append(opilased[i])
-for i in range(len(p_opilased)):
-    print(p_opilased[i])
+for i in range(len(õpilased)):
+    if õpilased[i] not in muuda_õpilased:
+        muuda_õpilased.append(õpilased[i])
 
-
-
+for j in range(len(muuda_õpilased)):
+    print(muuda_õpilased[j])
 
 
 
 
 
-
-#Opilased
-
+#Õpilased
 print()
 
-opilased = ["Juhan","Kati","Maarja","Mario","Mati"]
+õpilased = ["Juhan","Kati","Maarja","Mario","Mati"]
 
-for i in range(len(opilased)):
-    print(f"{i+0} {opilased[i]}")
-muutmine = int(input("Mis nimi sa tahad muuda? (0/1/2/3/4): "))
-del opilased[muutmine-0]
-nimed = input("Sisestage uus nimed: ")
-opilased.insert(muutmine-0,nimed)
-for j in range(len(opilased)):
-    print(opilased[j])
+for i in range(len(õpilased)):
+    print(f"{i+0} {õpilased[i]}")
+muutus = int(input("Mis nimi tahad muuta? (0/1/2/3/4): "))
+
+del õpilased[muutus-0]
+nimed = input("Siseta uus nimi: ")
+õpilased.insert(muutus-0,nimed)
+
+
+for j in range(len(õpilased)):
+    print(õpilased[j])
     
-
-
-
-
-
-
 
 
 # Nimed
@@ -82,5 +72,5 @@ for i in range(5):
     nimi = input("Sisesta nimi:  ")
     nimed.append(nimi)
 nimed.sort()
-for e in range(len(nimed)):
-    print(nimed[e])
+for j in range(len(nimed)):
+    print(nimed[j])
